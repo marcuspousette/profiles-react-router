@@ -8,10 +8,10 @@ export default function RootLayout() {
                 <nav className="navbar">
                     <img className="logo" src={logo} alt="Techover" />
                     <div className="nav-links">
-                        <NavLink className="nav-link" to="/">Home</NavLink>
-                        <NavLink className="nav-link" to="about">About</NavLink>
-                        <NavLink className="nav-link" to="help">Help</NavLink>
-                        <NavLink className="nav-link" to="careers">Careers</NavLink>
+                        <NavLink className="nav-link" to="/">Hem</NavLink>
+                        <NavLink className="nav-link" to="about">Om oss</NavLink>
+                        <NavLink className="nav-link" to="help">Hjälp</NavLink>
+                        <NavLink className="nav-link" to="careers">Profiler</NavLink>
                     </div>
                 </nav>
             </header>

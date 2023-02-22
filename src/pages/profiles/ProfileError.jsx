@@ -1,13 +1,13 @@
 import { Link, useRouteError } from 'react-router-dom'
 
-export default function CareersError() {
+export default function ProfileError() {
     const error = useRouteError()
 
     return (
-        <div className="careers-error">
+        <div className="profiles-error">
             <h2>Error</h2>
             <p>{error.message}</p>
-            <Link to="/">Back to the Homepage</Link>
+            <Link to="/">Gå tillbaka till hemsidan</Link>
         </div>
     )
 }

@@ -26,7 +26,7 @@ button {
   border: 0;
   padding: 8px;
   border-radius: 4px;
-  color: white;
+  color:  var(--dark);;
   background: var(--primary);
   cursor: pointer;
 }
@@ -57,7 +57,7 @@ button {
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
   object-fit: contain;
 }
 /* end navbar */
@@ -116,8 +116,8 @@ form label span {
   margin-bottom: 10px;
 }
 
-/* careers list */
-.careers > a {
+/* profiles list */
+.profiles > a {
   display: block;
   background: rgba(0,0,0,0.2);
   padding: 20px;
@@ -125,19 +125,19 @@ form label span {
   margin: 20px 0;
   text-decoration: none;
 }
-.careers > a:hover p {
+.profiles > a:hover p {
   color: var(--primary);
 }
-.careers p {
+.profiles p {
   margin: 0;
 }
-.careers > a p:last-child {
+.profiles > a p:last-child {
  font-size: 0.8em;
  color: #bbb;
 }
 
-/* careers details */
-.career-details {
+/* profiles details */
+.profile-details {
   background: rgba(0,0,0,0.2);
   padding: 20px;
   border-radius: 4px;

@@ -1,11 +1,11 @@
 import { Link, useLoaderData } from 'react-router-dom'
 
-export default function Careers() {
+export default function Profile() {
     const careers = useLoaderData()
     console.log(careers)
 
     return (
-        <div className="careers">
+        <div className="profiles">
             {careers.map((career) => (
                 <Link to={career.id.toString()} key={career.id}>
                     <p>{career.name}</p>
@@ -17,7 +17,7 @@ export default function Careers() {
 }
 
 // data loader
-export const careersLoader = async () => {
+export const profileLoader = async () => {
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
 
     if (!res.ok) {
