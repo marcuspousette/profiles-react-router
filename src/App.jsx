@@ -32,7 +32,7 @@ const router = createBrowserRouter(
                 <Route path="contact" element={<Contact />} />
             </Route>
             <Route
-                path="careers"
+                path="profiles"
                 element={<ProfileLayout />}
                 errorElement={<ProfileError />}
             >

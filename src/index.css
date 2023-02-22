@@ -32,10 +32,14 @@ button {
 }
 
 /* navbar */
+header {
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
 }
 
 .nav-links {
@@ -70,27 +74,30 @@ main {
 }
 
 /* help layout */
-.help-layout nav {
+.help-layout__nav {
   display: flex;
   justify-content: center;
   gap: 30px;
   margin: 30px 0;
 }
-.help-layout nav a{
+
+.help-layout__nav__link {
   padding: 10px;
   border: 2px solid white;
   border-radius: 4px;
   text-decoration: none;
 }
-.help-layout nav a:hover{
+
+.help-layout__nav__link:hover{
   border-color: var(--primary);
 }
-.help-layout nav a.active {
+
+.help-layout__nav__link.active {
   background: var(--primary);
 }
 
 /* faq */
-.faq .question {
+.faq__question {
   background: rgba(0,0,0,0.2);
   padding: 5px 20px;
   border-radius: 4px;
@@ -117,21 +124,24 @@ form label span {
 }
 
 /* profiles list */
-.profiles > a {
-  display: block;
-  background: rgba(0,0,0,0.2);
-  padding: 20px;
-  border-radius: 4px;
-  margin: 20px 0;
-  text-decoration: none;
+.profiles__links {
+    display: block;
+    background: rgba(0,0,0,0.2);
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px 0;
+    text-decoration: none;
 }
-.profiles > a:hover p {
+
+.profiles__links:hover p {
   color: var(--primary);
 }
+
 .profiles p {
   margin: 0;
 }
-.profiles > a p:last-child {
+
+.profiles__station {
  font-size: 0.8em;
  color: #bbb;
 }
@@ -142,24 +152,4 @@ form label span {
   padding: 20px;
   border-radius: 4px;
   margin: 20px 0;
-}
-
-/* breadcrumbs */
-.breadcrumbs {
-  max-width: 1200px;
-  margin: 20px auto;
-}
-.breadcrumbs > *{
-  display: inline-block;
-  margin-right: 10px;
-}
-.breadcrumbs .crumb:after {
-  content: '>';
-  margin-left: 10px;
-}
-.breadcrumbs .crumb:last-child:after {
-  display: none;
-}
-.breadcrumbs .crumb a {
-  color: #ddd;
 }
